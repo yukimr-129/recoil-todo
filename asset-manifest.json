@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/recoil-todo/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/recoil-todo/static/js/main.64662f84.chunk.js",
+    "main.js.map": "/recoil-todo/static/js/main.64662f84.chunk.js.map",
+    "runtime-main.js": "/recoil-todo/static/js/runtime-main.406ff182.js",
+    "runtime-main.js.map": "/recoil-todo/static/js/runtime-main.406ff182.js.map",
+    "static/js/2.f862910f.chunk.js": "/recoil-todo/static/js/2.f862910f.chunk.js",
+    "static/js/2.f862910f.chunk.js.map": "/recoil-todo/static/js/2.f862910f.chunk.js.map",
+    "static/js/3.202daeae.chunk.js": "/recoil-todo/static/js/3.202daeae.chunk.js",
+    "static/js/3.202daeae.chunk.js.map": "/recoil-todo/static/js/3.202daeae.chunk.js.map",
+    "index.html": "/recoil-todo/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/recoil-todo/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.f862910f.chunk.js.LICENSE.txt": "/recoil-todo/static/js/2.f862910f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.406ff182.js",
+    "static/js/2.f862910f.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.64662f84.chunk.js"
+  ]
+}
