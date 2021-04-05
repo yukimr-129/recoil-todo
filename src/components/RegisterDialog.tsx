@@ -6,6 +6,11 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
+import { useRecoilValue } from 'recoil';
+import { useRecoilState } from 'recoil';
+
+import { taskContentState, taskDeadlineState, taskPriorityState } from '../atoms/RegisterDialogContent';
+import { TasksList } from '../atoms/TasksList';
 import { RegisterDialogContent } from './RegisterDialogContent';
 
 type Props = {
@@ -15,6 +20,28 @@ type Props = {
 
 export const RegisterDialog: VFC<Props> = (props) => {
     const { open, onClose } = props
+
+    const taskContent = useRecoilValue(taskContentState)
+    const taskDeadline = useRecoilValue(taskDeadlineState)
+    const taskPriority = useRecoilValue(taskPriorityState)
+
+    const [tasks, setTasks] = useRecoilState(TasksList)
+
+    //タスク登録
+    const handleRegister = () => {
+        setTasks([
+            ...tasks,
+            {
+                content: taskContent,
+                deadline: taskDeadline,
+                priority: taskPriority
+            }
+        ])
+        onClose()
+    }
+
+
+
 
     return (
         <Dialog 
@@ -29,7 +56,7 @@ export const RegisterDialog: VFC<Props> = (props) => {
                 <Button onClick={onClose} color="primary">
                     もどる
                 </Button>
-                <Button color="primary">
+                <Button onClick={handleRegister} color="primary">
                     登録
                 </Button>
             </DialogActions>
