@@ -2,6 +2,7 @@ import { AppBar, createStyles, fade, InputBase, makeStyles, Theme, Toolbar, Typo
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
+import { VFC } from "react";
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -61,7 +62,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export const TodoAppHeader = () => {
+export const TodoAppHeader: VFC = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
